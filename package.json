@@ -17,6 +17,7 @@
     "@deckdeckgo/highlight-code": "^4.4.0",
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.10.4",
+    "@stackbit/gatsby-plugin-menus": "^0.0.4",
     "gatsby": "^4.22.0",
     "gatsby-plugin-emotion": "^7.22.0",
     "gatsby-plugin-local-search": "^2.0.1",
