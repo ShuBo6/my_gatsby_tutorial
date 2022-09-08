@@ -1,12 +1,17 @@
 import React from "react"
-import { css } from "@emotion/core"
+import { css } from "@emotion/react"
 import { Link, graphql } from "gatsby"
 import { rhythm } from "../utils/typography"
 import Layout from "../components/layout"
 
-export default ({ data }) => {
+
+
+
+export default ({ data}) => {
+  // const {  navigate, location } = props
+
   return (
-    <Layout>
+    <Layout>        
       <div>
         <h1
           css={css`

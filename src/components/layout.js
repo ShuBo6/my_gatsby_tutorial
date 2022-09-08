@@ -1,10 +1,11 @@
 import React from "react"
 import { css } from "@emotion/react"
 import { useStaticQuery, Link, graphql } from "gatsby"
-
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 import { rhythm } from "../utils/typography"
-
+import Search from '../components/searchPostsUseLunr'
 export default ({ children }) => {
+  deckDeckGoHighlightElement();
   const data = useStaticQuery(
     graphql`
       query {
@@ -25,6 +26,7 @@ export default ({ children }) => {
       padding-top: ${rhythm(1.5)};
     `}
   >
+    <Search classNames={'link_bold'}/>
     <Link to={`/`}>
       <h3
         css={css`
